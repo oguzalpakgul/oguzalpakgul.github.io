@@ -1,2 +1,2 @@
-# oguzalpakgul.github.io
-My personel website
+# My Personel Website
+You can check out this website at oguzalpakgul.github.com
