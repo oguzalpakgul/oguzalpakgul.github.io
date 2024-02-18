@@ -12,7 +12,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body className={"min-h-screen font-sans max-w-2xl mx-auto p-6 "}>
+      <body className={"min-h-screen font-sans max-w-2xl mx-auto p-4 "}>
         {children}
 
         <Footer />

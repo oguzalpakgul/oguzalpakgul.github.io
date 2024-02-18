@@ -3,9 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-
+  --bg: white;
+  --inlineCode-bg: #c2e7ff;
+  --inlineCode-text: #39a7f2;
 }
 
-
-
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}

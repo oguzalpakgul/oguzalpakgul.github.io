@@ -2,6 +2,7 @@ import { getAllPosts, getPostBySlug } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { notFound } from "next/navigation";
 import markdownStyles from "./markdown-styles.module.css";
+import { BlogNav } from "@/components/blogNav";
 
 export const dynamicParams = false;
 export const dynamic = "force-static";
@@ -14,8 +15,6 @@ export async function generateStaticParams() {
   }));
 }
 
-// Multiple versions of this page will be statically generated
-// using the `params` returned by `generateStaticParams`
 export default async function Page({ params }) {
   if (!params) {
     return notFound();
@@ -25,7 +24,9 @@ export default async function Page({ params }) {
   const content = await markdownToHtml(post.content || "");
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto mt-6">
+      <BlogNav></BlogNav>
+      <h1 className="text-2xl font-black">{post.title}</h1>
       <div
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}

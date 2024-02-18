@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="flex items-center sm:justify-center justify-between flex-col-reverse md:flex-row md:justify-between mt-8 py-8 md:mt-20 gap-4">
+    <footer className="flex items-center sm:justify-center justify-between flex-col-reverse md:flex-row md:justify-between mt-2 py-8 gap-4">
       <p className="font-mono tracking-tight">
         Made with <span className="text-red-500">&hearts;</span> in Antalya
       </p>
