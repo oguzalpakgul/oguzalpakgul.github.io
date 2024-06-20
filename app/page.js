@@ -7,8 +7,7 @@ const Home = () => {
       <div className="max-w-2xl pt-10 text-lg ">
         <p>Merhabalar!</p>
         <p>
-          <br /> Ben Oğuzalp. Full-stack developer olarak çalışmaktayım.
-          Javascript, Python ve Qml kodlama dilleriyle ilgilenmekteyim. Yeni
+          <br /> Ben Oğuzalp. Full-stack developer olarak çalışmaktayım. Yeni
           ürün geliştirmekten ve üretim aşamasında olmaktan her zaman keyif
           almışımdır. Burada sizlere öğrendiğim veya aktarmak istediğim
           bilgilere ulaşabilirsiniz. İyi günler dilerim :)
